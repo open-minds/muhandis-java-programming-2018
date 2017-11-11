@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Team Open Minds and MC-Lab| What the Heck is JDK, SDK, JVM...</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					To run Java you need JRE.
+					And for developement you need a SDK. The Java's SDK is known as JDK. It contains the runtime environement and Java's compiler with a set of APIs and libraries
+					, such as Swing, AWT or JavaFx GUI libraries...
+					<br>
+					You only need to download the right version of JDK from Oracle's website for your operating system.
+				</section>
+
+				<section>
+					<h3>What the Heck is ?</h3>
+					<img src="wordcloud.svg" style="border:none;box-shadow:unset">
+				</section>
+
+				<section>
+					<section>
+						<h3>Java is cross platform thanks to the JRE</h3>
+						<p>The Java runtime environment consists of the Java virtual machine, the Java core classes, and supporting files. </p>
+					</section>
+
+					<section>
+						<h3>Java's SDK is called JDK</h3>
+					</section>
+				</section>
+
+				<section>
+					<h3>Compiler translate your code to a machine code</h3>
+					<img src="Java-Compiler.png" alt="">
+				</section>
+				<section>
+					<h3>Library is a collection of programs</h3>
+					<p>Example:
+						<br>
+						Calculate the square-root (جذر تربيعي)
+					</p>
+					<pre>
+						<code data-trim data-noescape>
+public class MathDemo {
+   public static void main(String[] args) {
+      double x = 9;
+
+      // print the square root of x
+      System.out.println("The square root is " + Math.sqrt(x));
+   }
+}
+</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>API is an interface</h3>
+					<p>
+						You don't know how <code><mark>Math.sqrt()</mark></code> is implemented,
+						 you just call the function and you use it.
+					 </p>
+				</section>
+
+				<section>
+					<h4>Swing, JavaFX, AWT... Are libraries for making GUI</h4>
+					<p>You won't program a button, you just need to use it in you projects. And Java libraries are here for you.</p>
+				</section>
+
+				<section>
+					<h3>CLI != GUI</h3>
+					<p>
+						CLI is the <mark>console</mark>, the boring area where you interact with your programs and <mark>GUI</mark>
+					are the interfaces where humans can interact with programs and computers.
+				</p>
+				</section>
+
+				<section>
+					<h3>IDE</h3>
+					<p>Integrated development environment = <br> Source Code editor + Compiler + Debugger + plugins</p>
+					<p>
+						It provides facilities such as smart autocompletion, importing libraries ...
+					</p>
+				</section>
+
+				<section>
+					<h3>Getting ready for the Java journey</h3>
+					<p>Install JDK from Oracle's website</p>
+					<p>Choose an IDE (Intellij Idea, Eclipse, Netbeans)</p>
+				</section>
+
+				<section>
+					<section>
+						<h1>Questions ?</h1>
+					</section>
+					<section>
+						<p>I am<br>Fortas Abdeldjalil form Team Open Minds<br> and that was my talk</p>
+						<p>Thank you !</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
